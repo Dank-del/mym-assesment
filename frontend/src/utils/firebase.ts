@@ -43,6 +43,8 @@ const signInWithGoogle = async () => {
                 email: user.email,
             });
         }
+        alert("Signed in Successfully.")
+        window.location.href = "/"
     } catch (err) {
         console.error(err);
         // @ts-ignore
