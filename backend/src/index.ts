@@ -7,7 +7,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 const config = createConfig({
     server: {
-        listen: 8090, // port or socket
+        listen: process.env.PORT as string, // port or socket
     },
     startupLogo: false,
     cors: ({ defaultHeaders, request, endpoint, logger }) => ({
